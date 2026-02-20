@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - operator-and-crds.yaml
 - vm-db.yaml
+- vm-agent.yaml
