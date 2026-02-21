@@ -5,3 +5,5 @@ resources:
 - db/cluster.yaml
 - db/cnpg.yaml
 - db/db-auth.yaml
+- redis/redis-data-persistentvolumeclaim.yaml
+- redis/redis-deployment.yaml
