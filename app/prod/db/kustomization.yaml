@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - cnpg.yaml
 - cluster.yaml
+- db-auth.yaml
