@@ -3,3 +3,7 @@ kind: Kustomization
 resources:
 - cnpg.yaml
 - cluster.yaml
+decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg
