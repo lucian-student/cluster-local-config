@@ -1,39 +1,3 @@
-apiVersion: v1
-data:
-    password: ENC[AES256_GCM,data:RqNIu3XURJCOHV9xAfCW6RWlxQf9e991159dSOxPf4/5/o1TSpxXQxv+mFw=,iv:dCnD6YMYHpcFBBDR7WFtsMCSYBzxRjoY8p+sPQD8vS0=,tag:xYREhbbJSOdL3Lh2rVf+TQ==,type:str]
-    user: ENC[AES256_GCM,data:pXg8e2/MX6eq/3bq,iv:M5Zx0pePJZQtuyBTy2WgHb9BryhBY16+LIcXIUdeCwU=,tag:I9GZ24p2f95Meb668qZo/Q==,type:str]
-kind: Secret
-metadata:
-    name: docmost-secret
-    namespace: prod
-type: kubernetes.io/basic-auth
-sops:
-    lastmodified: "2026-02-21T16:21:59Z"
-    mac: ENC[AES256_GCM,data:3QByb0URk41IggktkpvqoTvw38QByU1zPp2I+yMSNdDXtvHuY9Zh7F9go/1tpG3nWFsg3o6CG4YbN0o+tfyjsSHrDGidJ1tlGvu9EbuZXA4X7wHQEDMK+zTvSV1j2giqSECJoppkkyPfQM3vJB2TGNe5N9xcBbh1NRzadwr1l/4=,iv:COtUOXK690sO8SBkzR/BfeHCgMamN0F5awkuqQ6RX+Q=,tag:bt3gODIEwXSrixfvhHqPFA==,type:str]
-    pgp:
-        - created_at: "2026-02-21T16:21:59Z"
-          enc: |-
-            -----BEGIN PGP MESSAGE-----
-
-            hQIMAy91JNf+xFTBAQ/9G22kRWs8gIS7069v7MRBYcIKYyzKMPvMdxxE4nzqLGVH
-            4qjiF1j5Hijyg8Cg74l+UnRgoZhzowGRtX3zxS/c0MTdbViYFNTNBRkEDDIJ1nVt
-            OGiw/EczjN6JZCgF0SJYMjw1Fg4dcvyWGy3m8LHWqEPXW0BVtxAieGQsQz1czVbL
-            rTF3VZv+93o0jBacYS174SMcbRBSIbLX+51Figng4rHDEhtAVszDUfjupB2iatuM
-            eTwFTK1LzMd2DNxdyapbW0Qs+gVz1S4t3ajJNsrRlC05dOiOl7iKc3hNqKHlrp1r
-            HT8B4M6Nb6D5uecbaypf9kh5uvOUEoLI8sUwIf0YmX7fX52CeM/hEEYxxB1F4293
-            ZRwvYEugqqol+UeoJJsY5WxAcPp5A8iKoSpPSmSAJ5ncWTjqZUMzvfamphEx4kaD
-            JR/Ge+aYz26GlfNiGPkogwbCGsTbosFLGWILc0U9LirOjFsx2jahmS7v61VdmQ72
-            VtO0RUrM2DMg+vDzouQzMtDDx4/Y70MWsBLqT9UIqc4AoL6DowgTp++ZSF4tBw6j
-            x4TEinFfYB2+ketl80cjXgptnRnkxM1vSKOAzzaTe12msamiXz82oqeE6tdsYvU3
-            6iF22rfdTsNc/z++qGwv0hkUrziJ2aSROQBAWKEXaRLTJjjqVRGvH8pvtwz9Oi7S
-            XgGExY/MEaKauTUq58eaWEi1xEgknLl2sTcx6QJIBm58NvY+qMSoyxaj58nwUvHm
-            FoTBkyJXXtcgO10LN23GTanUxS3oNP8jJ4m5NkJwmpkWO0vzPa85gPxjQZKDXJQ=
-            =hlQ6
-            -----END PGP MESSAGE-----
-          fp: 4895667E8CD5B0D56E25087A7C23EA7783386DAC
-    encrypted_regex: ^(data|stringData)$
-    version: 3.11.0
----
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:
